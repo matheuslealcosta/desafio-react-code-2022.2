@@ -1,0 +1,15 @@
+.external-div{
+    display: flex;
+    justify-content: center;
+    background-image: url(/public/LogoCODECODE.png);
+    background-size: 4rem;
+    background-color: #9b57ba;
+
+}
+.main-div{
+    background-color: lightgrey;
+    width: 80%;
+    height: 100vh;
+    object-fit: contain;
+
+}
