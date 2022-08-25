@@ -7,7 +7,7 @@ function Main(){
         <body>
             <div className="external-div">
                 <div className="main-div">
-                    <p></p>
+                    <p>ola</p>
                 </div>
             </div>
         </body>

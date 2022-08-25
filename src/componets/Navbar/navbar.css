@@ -1,0 +1,35 @@
+.nav{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itens{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item{
+    color: wheat;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.item:hover{
+   color:yellow;
+   scale: 1.05;
+}
+
+img{
+    width: 5rem;
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+button{
+    background-color: lightpink;
+}

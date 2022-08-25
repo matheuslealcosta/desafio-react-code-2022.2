@@ -1,7 +1,7 @@
 .external-div{
     display: flex;
     justify-content: center;
-    background-image: url(/public/LogoCODECODE.png);
+    background-image: url('../../Imagens/logoCode.png');
     background-size: 4rem;
     background-color: #9b57ba;
 
