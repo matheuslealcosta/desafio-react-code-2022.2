@@ -1,6 +1,8 @@
 import React from "react";
 import './Login.css'
-import Logo from '../../Imagens/logoCode.png'
+import Logo from '../../Imagens/LogoCode2.png'
+import Adm from '../Adm'
+import { Link } from "react-router-dom";
 
 function Login(){
     return(
@@ -11,7 +13,7 @@ function Login(){
                 </div>
                 <input placeholder="E-mail"></input>
                 <input placeholder="Senha"></input>
-                <input type='submit'></input>
+                <Link to='/adimin'><button className="button-login">Entrar</button></Link>
             </div>
         </div>
     );
