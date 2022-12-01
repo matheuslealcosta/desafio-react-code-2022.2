@@ -19,24 +19,35 @@ function Adm() {
     return (
 
         <main>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Departamento</th>
+                                <th>Ação</th>
             {members.map((members, key) => {
                 return (
-                    <div className="botoes">
-                        <h1>{members.id}</h1>
-                        <h2>{members.name}</h2>
-                        <p>{members.departamentos}</p>
-                        <div className="botaoDeletar">
-                            <button>Excluir</button>
-                        </div>
+                    <div className="card-adm">
+                        <table className="table">
+                            <tr>
+                                <td>{members.id}</td>
+                                <td>{members.name}</td>
+                                <td className="departamento">{members.departamentos}</td>
+                                <td>
+                                <div className="btn">
+                            <div className="botaoDeletar">
+                                <button>Excluir</button>
+                            </div>
 
-                        <div className="botaoEditar">
-                            <button>Editar</button>
-                        </div>
+                            <div className="botaoEditar">
+                                <button>Editar</button>
+                            </div>
 
-                        <div className="botaoVisualizar">
-                            <button>Visualizar</button>
+                            <div className="botaoVisualizar">
+                                <button>Visualizar</button>
+                            </div>
                         </div>
-
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 )
             })

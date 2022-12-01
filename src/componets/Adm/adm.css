@@ -1,0 +1,46 @@
+.card-adm{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+}
+
+.btn{
+   display: flex;
+   flex-direction: row;
+   display: flex;
+}
+
+
+.table{
+   width: 100%;
+   border: 1rem;
+   border-radius: 1rem;
+   border: 1;
+   border-color: black;
+}
+
+.botaoDeletar{
+    background-color: red;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+.botaoEditar{
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+.botaoVisualizar{
+    background-color: green;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
