@@ -50,6 +50,12 @@ img{
     cursor: pointer;
 }
 
+.trava-nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
 @media screen and ( max-width:768px){
     .nav-toggler{
         display: block;

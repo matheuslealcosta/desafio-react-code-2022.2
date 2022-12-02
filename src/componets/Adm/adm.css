@@ -1,6 +1,7 @@
 .card-adm{
     margin: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     vertical-align: center;
@@ -8,17 +9,24 @@
 
 .btn{
    display: flex;
-   flex-direction: row;
-   display: flex;
 }
 
+.btn-page{
+    background-color: royalblue;
+    color: white;
+    padding: 1rem;
+    border: 0.1px solid;
+   
+    font-size: 1.1rem;
+}
+.btn-page:hover{
+    scale: 1.2;
+}
 
-.table{
-   width: 100%;
-   border: 1rem;
-   border-radius: 1rem;
-   border: 1;
-   border-color: black;
+.main-div-1{
+    display: flex;
+    justify-content: center;
+    width: 90%;
 }
 
 .botaoDeletar{
@@ -43,4 +51,25 @@
     border-radius: 0.3rem;
     padding: 0.3rem;
     margin: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .td-btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-div-1{
+        width: 100%;
+    }
+
+    .botaoDeletar, .botaoEditar, .botaoVisualizar{
+        padding: 0.15rem;
+    }
 }

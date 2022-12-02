@@ -6,13 +6,15 @@ import logoCode from '../../Imagens/logoCode.png'
 
 function Navbar() {
   const [active, setActive] = useState("itens");
+  const [travaNav, setTravaNat] = useState("nav");
   const navToggle = () => {
-     active === 'itens' ? setActive('itens ativo') : setActive('itens')
+     active === 'itens' ? setActive('itens ativo') : setActive('itens');
+     travaNav === 'nav' ? setTravaNat('nav trava-nav') : setTravaNat('nav');
   }
 
 
   return (
-    <nav className="nav">
+    <nav className={travaNav}>
       <Link to="/" className="img-main"><img src={logoCode}></img></Link>
       <ul className={active}>
         <Link to='/' className="item">Home</Link>
