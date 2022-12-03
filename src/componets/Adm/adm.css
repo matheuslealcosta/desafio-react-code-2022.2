@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200;300;400;500;600&display=swap');
+
 .card-adm{
     margin: 1rem;
     display: flex;
@@ -9,6 +12,16 @@
 
 .btn{
    display: flex;
+}
+
+.list{
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+}
+
+.listHead{
+    font-weight: 500;
 }
 
 .btn-page{
@@ -26,14 +39,21 @@
 .main-div-1{
     display: flex;
     justify-content: center;
-    width: 90%;
 }
 
 .botaoDeletar{
     background-color: red;
     color: white;
     border-radius: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+}
+
+.botaoAdicionar{
+    background-color: gray;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 1rem;
     margin: 0.5rem;
 }
 
@@ -41,7 +61,7 @@
     background-color: lightseagreen;
     color: white;
     border-radius: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.8rem;
     margin: 0.5rem;
 }
 
@@ -49,8 +69,16 @@
     background-color: green;
     color: white;
     border-radius: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.8rem;
     margin: 0.5rem;
+}
+
+.botaoDeletar:hover, .botaoEditar:hover, .botaoVisualizar:hover, .botaoAdicionar:hover{
+    scale: 1.1;
+}
+
+.table-table{
+    width: 90%;
 }
 
 @media screen and (max-width: 900px) {

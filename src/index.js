@@ -7,6 +7,10 @@ import Main from "./componets/Main";
 import Navbar from "./componets/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;500;600&display=swap');
+</style>
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

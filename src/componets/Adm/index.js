@@ -3,7 +3,9 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import Table from "react-bootstrap/Table";
+import { BsTrashFill, BsFillEyeFill, BsPencilSquare, BsFileEarmarkPlusFill } from "react-icons/bs";
 import "./adm.css";
+
 
 function Adm() {
   const [members, setMembers] = useState([]);
@@ -29,37 +31,39 @@ function Adm() {
 
   return (
     <main className="main-div-1">
+      <div className="table-table">
       <div className="card-adm">
+        <button className="botaoAdicionar"><BsFileEarmarkPlusFill/></button>
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Nome</th>
-              <th>Departamento</th>
-              <th>Ação</th>
+              <th className="list listHeah">ID</th>
+              <th className="list listHead">Nome</th>
+              <th className="list listHead">Departamento</th>
+              <th className="list listHead">Ação</th>
             </tr>
           </thead>
           <tbody>
             {currentItens.map((members, key) => {
               return (
                 <tr>
-                  <td>{members.id}</td>
-                  <td>{members.name}</td>
-                  <td>{members.departamentos}</td>
+                  <td className="list">{members.id}</td>
+                  <td className="list">{members.name}</td>
+                  <td className="list">{members.departamentos}</td>
                   <div className="btn">
                     <td className="td-btn">
                       <div className="botaoDeletar">
-                        <button>Excluir</button>
+                        <button><BsTrashFill/></button>
                       </div>
                     </td>
                     <td className="td-btn">
                       <div className="botaoEditar">
-                        <button>Editar</button>
+                        <button><BsPencilSquare/></button>
                       </div>
                     </td>
                     <td  className="td-btn">
                       <div className="botaoVisualizar">
-                        <button>Visualizar</button>
+                        <button><BsFillEyeFill/></button>
                       </div>
                     </td>
                   </div>
@@ -72,6 +76,7 @@ function Adm() {
         {Array.from(Array(pages), (item, index) => {
           return <button  className="btn-page" value={index} onClick={(e) => setCurrentPage(index)}>{index}</button>
         })}
+      </div>
         </div>
       </div>
     </main>
