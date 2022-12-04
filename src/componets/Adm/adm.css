@@ -81,6 +81,37 @@
     width: 90%;
 }
 
+.modais{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+}
+
+.modal-criar{
+   display: flex;
+   justify-content: center; 
+   vertical-align: center;
+   height: 100px;
+   background-color: white;
+   border-radius: 1rem;
+   width: 50%;
+}
+
+.modal-criar-overlay{
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    background-color: rgba(1, 1, 1, 0.6);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 @media screen and (max-width: 900px) {
     .btn{
         display: flex;
